@@ -54,5 +54,6 @@ const puzzle =
 
 toys.push(puzzle, electronic);
 for (const toy of toys) {
-    console.log(`${toy.name} is a ${toy.category} game that costs ${toy.price} and is recommended for ${toy.ageRecommendation}`)
+    toy.price = toy.price * 1.05
+    console.log(`${toy.name} is a ${toy.category} game that costs $${toy.price} and is recommended for ${toy.ageRecommendation}.`)
 } 
