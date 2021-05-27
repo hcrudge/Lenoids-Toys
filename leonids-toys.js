@@ -1,5 +1,5 @@
 // ID, Name, inStock, price, AgeRec
-
+const toyToFind = 2
 const toys =[
     {
         id: 1,
@@ -54,6 +54,8 @@ const puzzle =
 
 toys.push(puzzle, electronic);
 for (const toy of toys) {
+    if (toy.id === toyToFind){
     toy.price = toy.price * 1.05
     console.log(`${toy.name} is a ${toy.category} game that costs $${toy.price} and is recommended for ${toy.ageRecommendation}.`)
-} 
+    } 
+}
