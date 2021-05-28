@@ -29,6 +29,7 @@ const toys =[
     }
 ]
 // Append New Toys
+// Add unique id to toys
 const addToyToInventory = (toyObject) =>{
     const lastIndex = toys.length - 1
     const currentLastToy = toys[lastIndex]
@@ -37,6 +38,20 @@ const addToyToInventory = (toyObject) =>{
     toyObject.id = idForNewToy
     toys.push(toyObject)
 }
+//CLASS EXAMPLE
+// const calcId = (arr) =>{
+//     const lastIndex = arr.length - 1
+//     if (lastIndex === -1) {
+//         const newId = 1
+//         return newId
+//     }
+//     const lastItemId = arr[lastIndex].id
+//     const newId = lastItemId + 1
+//     return newId
+// }
+// const newID = calcID(toppings)
+// console.log(newID)
+
 const puzzle =
 {
     // id: 4,
