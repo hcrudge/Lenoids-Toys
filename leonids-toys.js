@@ -60,13 +60,30 @@ const electronic =
 addToyToInventory(puzzle)
 addToyToInventory(electronic)
 
-// toys.push(puzzle, electronic);
-for (const toy of toys) {
-    console.log(`${toy.name} is a ${toy.category} game that costs $${toy.price} and is recommended for ${toy.ageRecommendation}.`)
-}
-console.log(toys)
+toys.push(puzzle, electronic);
+// for (const toy of toys) {
+//     console.log(`${toy.name} is a ${toy.category} game that costs $${toy.price} and is recommended for ${toy.ageRecommendation}.`)
+// }
+// console.log(toys)
 // const toyToFind = 2
 
 // if (toy.id === toyToFind){
     // toy.price = toy.price * 1.05
     // } 
+
+// Remove Item Function
+const deadToy = 3
+
+const removeProduct = (toyToRemove) => {
+   
+    if (toys.id = toyToRemove) {
+            const foundToy = toys.findIndex(function(toys) {
+                return toys.id === toyToRemove;
+            });
+            toys.splice(foundToy,1)
+            }
+    }
+
+
+removeProduct(deadToy)
+console.log(toys)
